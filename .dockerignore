@@ -1,0 +1,14 @@
+# Ignore common files and directories
+.git/
+.svn/
+.hg/
+.idea/
+
+# Ignore specific files and directories
+ansible-playbooks/
+ansible-collections/
+roles/
+inventory/
+tests/
+docs/
+.ansible-cli/

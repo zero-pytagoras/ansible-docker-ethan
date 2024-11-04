@@ -1,0 +1,11 @@
+# Ignore common files and directories
+.git/
+.svn/
+.hg/
+.idea/
+
+# Ignore host-specific files and directories
+*.pub
+id_rsa
+known_hosts
+config
