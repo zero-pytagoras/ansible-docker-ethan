@@ -31,13 +31,13 @@ The task will be preformed by ansible playbook connecting and runnig the task on
 
 
 ## Script 
-#!/bin/bash
+''' #!/bin/bash '''
 
-# Read the /etc/os-release file 
-source /etc/os-release 
+''' # Read the /etc/os-release file ''' 
+''' source /etc/os-release '''
 
-# Print the distro information 
-echo "The distro is: ${PRETTY_NAME}"
+''' # Print the distro information ''' 
+''' echo "The distro is: ${PRETTY_NAME}" '''
 
 
 ## Installation 
