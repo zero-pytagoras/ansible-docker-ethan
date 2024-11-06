@@ -17,9 +17,10 @@
 
 
 ## Prerequisites
-1. Linux Debian distribution 
-2. Docker environment installed (docker-compose)
-3. Ansible installed
+1. Linux Debian distribution
+2. python 3.5 or later (python ≥ 3.6 is recommended) and pip are installed
+3. Docker environment installed (docker-compose)
+4. Ansible installed
 
 
 ## Usage 
@@ -45,22 +46,23 @@ The task will be preformed by ansible playbook connecting and runnig the task on
 
 1. ''' sudo apt update '''
 2. ''' sudo apt-get upgrade '''
-3. ''' sudo apt install docker-compose '''
-4. ''' ansible --version '''
+3. ''' sudo apt install python3-pip '''
+4. ''' sudo apt install docker-compose '''
+5. ''' ansible --version '''
    * check ansible installed and version 
 
 ### Uploading Docker nodes: 
 
-5. ''' mkdir -p task/ansible/docker '''
+6. ''' mkdir -p task/ansible/docker '''
    * created the folder for the task  
-6. ''' git init '''
-7. ''' git clone https://github.com/ethan-yadan/ansible-docker.git '''
+7. ''' git init '''
+8. ''' git clone https://github.com/ethan-yadan/ansible-docker.git '''
    * clone files to local repository
-8. ''' docker-compose up -d && docker-compose logs -f '''
+9. ''' docker-compose up -d && docker-compose logs -f '''
    * uploading docker nodes
-9. ''' docker ps '''
+10. ''' docker ps '''
    * checking nodes created and running
 
 ### run task on nodes with Ansible: 
 
-10. 
+11. 
