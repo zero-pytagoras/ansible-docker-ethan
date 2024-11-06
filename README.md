@@ -30,4 +30,9 @@ The task will be preformed by ansible playbook connecting and runnig the task on
 
 
 ## Installation 
+### Updating, upgarding and installing in linux debian: 
+
+1. ''' sudo apt update '''
+2. ''' sudo apt-get upgrade '''
+3. 
 
