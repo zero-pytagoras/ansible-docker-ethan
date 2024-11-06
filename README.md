@@ -11,6 +11,7 @@
 
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
+- [Script](#script)
 - [Installation](#installation)
 - [Contributing](#contributing)
 
@@ -27,6 +28,16 @@ The bash script created will check which Linux distrobution is installed in each
 The task will be preformed by ansible playbook connecting and runnig the task on each node. 
 
 ![Architecture](ansible_arch.png)
+
+
+## Script 
+#!/bin/bash
+
+# Read the /etc/os-release file 
+source /etc/os-release 
+
+# Print the distro information 
+echo "The distro is: ${PRETTY_NAME}"
 
 
 ## Installation 
