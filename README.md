@@ -47,9 +47,20 @@ The task will be preformed by ansible playbook connecting and runnig the task on
 2. ''' sudo apt-get upgrade '''
 3. ''' sudo apt install docker-compose '''
 4. ''' ansible --version '''
+   * check ansible installed and version 
 
 ### Uploading Docker nodes: 
 
 5. ''' mkdir -p task/ansible/docker '''
+   * created the folder for the task  
 6. ''' git init '''
-7. ''' 
+7. ''' git clone https://github.com/ethan-yadan/ansible-docker.git '''
+   * clone files to local repository
+8. ''' docker-compose up -d && docker-compose logs -f '''
+   * uploading docker nodes
+9. ''' docker ps '''
+   * checking nodes created and running
+
+### run task on nodes with Ansible: 
+
+10. 
