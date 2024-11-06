@@ -26,7 +26,7 @@ In this task, we create an environment of four different nodes, each with a diff
 The bash script created will check which Linux distrobution is installed in each node. 
 The task will be preformed by ansible playbook connecting and runnig the task on each node. 
 
-![Environment](
+![Architecture](ansible_arch.png)
 
 
 ## Installation 
