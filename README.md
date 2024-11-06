@@ -45,5 +45,11 @@ The task will be preformed by ansible playbook connecting and runnig the task on
 
 1. ''' sudo apt update '''
 2. ''' sudo apt-get upgrade '''
-3. 
+3. ''' sudo apt install docker-compose '''
+4. ''' ansible --version '''
 
+### Uploading Docker nodes: 
+
+5. ''' mkdir -p task/ansible/docker '''
+6. ''' git init '''
+7. ''' 
