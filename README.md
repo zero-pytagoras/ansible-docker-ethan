@@ -65,4 +65,8 @@ The task will be preformed by ansible playbook connecting and runnig the task on
 
 ### run task on nodes with Ansible: 
 
-11. 
+11. ''' sudo mkdir -p /etc/ansible '''
+   * Create folder for ansible configuration file 
+12. ''' sudo mv task/ansible/docker/ansible.cfg /etc/ansible '''
+   * Moving the ansible.cfg file from the cloned repository to /etc/ansible
+13. 
