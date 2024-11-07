@@ -1,0 +1,19 @@
+---
+- name: Determine Linux Distro 
+  hosts: all
+  gather_facts: yes 
+  tasks: 
+    - name: Copy script to remote hosts 
+      copy: 
+        src: ./detect_distro.sh
+        dest: /tmp/detect_distro.sh 
+        mode: 0755
+
+    - name: Execute script on remote hosts 
+      command: /tmp/detect_distro.sh 
+      register: distro_result 
+
+    - name: Print distrobution information 
+      debug: 
+        msg: "The distro on {{ inventory_hostname }} is {{ distro_result.stdout }}"
+
