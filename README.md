@@ -72,4 +72,7 @@ The task will be preformed by ansible playbook connecting and runnig the task on
 13. ''' ansible-playbook -i hosts.ini detect_distro.yml '''
    * Running the bash script on the inventory file
 
+## Contributing 
+
+Just me, myself and I :-)
 
