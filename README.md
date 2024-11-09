@@ -69,4 +69,7 @@ The task will be preformed by ansible playbook connecting and runnig the task on
    * Create folder for ansible configuration file 
 12. ''' sudo mv task/ansible/docker/ansible.cfg /etc/ansible '''
    * Moving the ansible.cfg file from the cloned repository to /etc/ansible
-13. 
+13. ''' ansible-playbook -i hosts.ini detect_distro.yml '''
+   * Running the bash script on the inventory file
+
+
